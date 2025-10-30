@@ -14,7 +14,7 @@ const Buttons = ({
         rel="noopener noreferrer"
         download={isDownload || undefined}
       >
-        <button className="cursor-pointer whitespace-nowrap px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base bg-gray-500/25 border border-white/20 rounded-xl hover:bg-slate-800 transition-all">
+        <button className="px-3 py-2 sm:px-5 sm:py-3 text-sm sm:text-[14px] cursor-pointer whitespace-nowrap bg-white/10 border-2 border-white/20 backdrop-blur-3xl hover:bg-white/15  rounded-lg ">
           {title1}
         </button>
       </a>
@@ -26,7 +26,7 @@ const Buttons = ({
         rel="noopener noreferrer"
         download={isDownload || undefined}
       >
-        <button className="cursor-pointer whitespace-nowrap px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base bg-gray-500/25 border border-white/20 rounded-xl hover:bg-slate-800 transition-all">
+        <button className="px-3 py-2 sm:px-5 sm:py-3 text-sm sm:text-[14px] cursor-pointer whitespace-nowrap bg-white/10 border-2 border-white/20 backdrop-blur-3xl  rounded-lg hover:bg-white/15 ">
           {title2}
         </button>
       </a>
