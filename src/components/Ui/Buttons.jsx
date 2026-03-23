@@ -73,7 +73,7 @@ const Buttons = ({
   };
 
   return (
-    <div className="flex justify-center items-center gap-4 sm:gap-6 mt-6 sm:mt-8 flex-wrap">
+    <div className="mt-5 flex flex-wrap items-center justify-center gap-3 sm:mt-8 sm:gap-6">
       {renderButton(title1, link1)}
       {renderButton(title2, link2)}
     </div>
