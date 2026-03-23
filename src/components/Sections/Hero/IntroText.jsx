@@ -1,5 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import HoverButton from "../../Ui/HoverButton";
 
 const IntroText = () => {
   useGSAP(() => {
@@ -18,20 +19,32 @@ const IntroText = () => {
   });
 
   return (
-    <div className="font-[alice] tracking-wide text-white text-center px-4">
-      <div className="flex flex-col items-center gap-3">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold leading-[1.1]">
-          <span className="intro-line block">Hi!</span>
-          <span className="intro-line block">
-            I’m <span className="text-white/40">Prem</span>
-          </span>
-        </h1>
+    <div className="px-4 text-center text-white">
+      <div className="mx-auto flex max-w-4xl flex-col items-center gap-4 sm:gap-5">
+        <HoverButton />
 
-        <p className="intro-line font-body text-2xl sm:text-4xl md:text-[38px] leading-snug max-w-[90%] sm:max-w-3xl md:max-w-4xl text-white/80">
-          A Frontend Developer focused <span className="text-red-400">on</span>{" "}
-          building smooth, animated, and impactful websites. I turn design
-          concepts <span className="text-red-400">into</span> pixel-perfect,
-          performant UIs.
+        <div className="space-y-3 sm:space-y-4">
+          <h1 className="font-[alice] text-[54px] font-semibold leading-[0.95] tracking-tight sm:text-[68px] md:text-[82px] lg:text-[88px]">
+            <span className="intro-line block text-white/92">Crafting</span>
+            <span className="intro-line block bg-gradient-to-r from-white via-white to-red-300 bg-clip-text text-transparent">
+              Modern Web
+            </span>
+          </h1>
+
+          <h2 className="intro-line whitespace-nowrap font-[poppins] text-lg font-medium tracking-[0.14em] text-white/82 sm:text-xl md:text-[28px]">
+            Prem Rathod <span className="text-red-500">|</span>{" "}
+            <span className="text-white/58">Frontend Developer & UI Builder</span>
+          </h2>
+        </div>
+
+        <p className="intro-line max-w-[360px] font-[poppins] text-base leading-7 text-white/74 sm:max-w-2xl sm:text-lg md:max-w-3xl md:text-[21px] md:leading-9">
+          I craft <span className="text-red-400">clean</span>, responsive, and
+          motion-rich websites that feel polished from the very first scroll.
+        </p>
+
+        <p className="intro-line max-w-[360px] font-[poppins] text-sm leading-6 text-white/45 sm:max-w-xl sm:text-[15px] md:max-w-2xl md:text-base">
+          Focused on turning ideas into modern interfaces with strong visual
+          detail, smooth interactions, and solid frontend performance.
         </p>
       </div>
     </div>

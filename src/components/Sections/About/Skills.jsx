@@ -27,10 +27,11 @@ const Skills = () => {
         opacity: 0,
         duration: 3,
         stagger: 0.15,
+
         ease: "power3.out",
         scrollTrigger: {
           trigger: container,
-          start: "top 85%",
+          start: "top 90%",
 
           toggleActions: "play none none reverse",
 
@@ -41,14 +42,14 @@ const Skills = () => {
       // Hover scaling (best handled via GSAP context)
       container.querySelectorAll(".icon-item").forEach((item) => {
         item.addEventListener("mouseenter", () =>
-          gsap.to(item, { scale: 1.1, duration: 0.2 })
+          gsap.to(item, { scale: 1.1, duration: 0.2 }),
         );
         item.addEventListener("mouseleave", () =>
-          gsap.to(item, { scale: 1, duration: 0.2 })
+          gsap.to(item, { scale: 1, duration: 0.2 }),
         );
       });
     },
-    { scope: containerRef } // ✅ CORRECT way to define scope
+    { scope: containerRef }, // ✅ CORRECT way to define scope
   );
 
   const vsCodePlaceholder =
@@ -84,7 +85,7 @@ const Skills = () => {
       </div>
 
       {/* Workflow & Tools Section */}
-      <h3 className="mt-10 px-2 py-1 sm:px-4 sm:py-2 md:px-6 md:py-3 text-sm sm:text-base md:text-lg border-2 border-white rounded-xl w-fit font-[Merriweather] font-bold tracking-wider">
+      <h3 className="mt-20 px-2 py-1 sm:px-4 sm:py-2 md:px-6 md:py-3 text-sm sm:text-base md:text-lg border-2 border-white rounded-xl w-fit font-[Merriweather] font-bold tracking-wider">
         Workflow & Tools
       </h3>
 

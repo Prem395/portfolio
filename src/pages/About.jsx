@@ -4,7 +4,10 @@ import ScrollFloat from "../components/Animations/ScrollFloat.jsx";
 
 const About = () => {
   return (
-    <div className="px-5 min-h-screen sm:px-28 ">
+    <section
+      id="about"
+      className="flex min-h-[100svh] w-full snap-start flex-col justify-center px-5 pt-20 pb-10 sm:px-28 sm:pt-20 sm:pb-8"
+    >
       <ScrollFloat
         animationDuration={1}
         ease="back.inOut(2)"
@@ -22,10 +25,10 @@ const About = () => {
 
       <Skills />
 
-      <div className="hidden sm:flex">
+      <div className="hidden sm:flex sm:mt-16">
         <StringAnimation />
       </div>
-    </div>
+    </section>
   );
 };
 

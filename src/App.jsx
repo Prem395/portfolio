@@ -1,6 +1,8 @@
 // App.jsx
 import { ReactLenis } from "lenis/react";
 import Navbar from "./components/Layout/Navbar";
+import Footer from "./components/Layout/Footer";
+import ScrollToTopButton from "./components/Ui/ScrollToTopButton";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -12,6 +14,7 @@ const App = () => {
   return (
     <ReactLenis root options={{ lerp: 0.08, smoothWheel: true }}>
       <Navbar />
+      <ScrollToTopButton />
       <div className="w-full relative bg-black">
         <div
           className="absolute inset-0 z-0"
@@ -21,12 +24,13 @@ const App = () => {
           }}
         />
 
-        <div className="relative z-20">
+        <div className="relative z-20 snap-y snap-mandatory">
           <Home projectsRef={projectsRef} />
           <About />
           <div ref={projectsRef}>
             <Projects />
           </div>
+          <Footer />
         </div>
       </div>
     </ReactLenis>
