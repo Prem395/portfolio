@@ -1,11 +1,10 @@
 import ScrollFloat from "../components/Animations/ScrollFloat";
 import MyProjects from "../components/Sections/MyProjects/MyProjects";
-import project1 from "../../public/Project1.png";
-import project2 from "../../public/Project2.png";
+
 const Projects = () => {
   const Projects = [
     {
-      image: project1,
+      image: "Project1.png",
       title: "RepairMate",
       subtitle: "Full-Stack Device Repair Management & Booking Platform ",
       handle: "repairmate",
@@ -14,7 +13,7 @@ const Projects = () => {
       url: "https://repair-mate-jsws.vercel.app/",
     },
     {
-      image: project2,
+      image: "Project2.png",
       title: "Portfolio Website",
       subtitle: "A Modern Frontend Developer Portfolio",
       handle: "portfolio",
