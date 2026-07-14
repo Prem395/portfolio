@@ -4,7 +4,7 @@ import MyProjects from "../components/Sections/MyProjects/MyProjects";
 const Projects = () => {
   const Projects = [
     {
-      image: "Project1.png",
+      image: "/Project1.png",
       title: "RepairMate",
       subtitle: "Full-Stack Device Repair Management & Booking Platform ",
       handle: "repairmate",
@@ -13,7 +13,7 @@ const Projects = () => {
       url: "https://repair-mate-jsws.vercel.app/",
     },
     {
-      image: "Project2.png",
+      image: "/Project2.png",
       title: "Portfolio Website",
       subtitle: "A Modern Frontend Developer Portfolio",
       handle: "portfolio",
