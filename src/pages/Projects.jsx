@@ -4,16 +4,16 @@ import MyProjects from "../components/Sections/MyProjects/MyProejcts";
 const Projects = () => {
   const Projects = [
     {
-      image: "repairmate-updated.png",
+      image: "Project1.png",
       title: "RepairMate",
-      subtitle: "An AI-Powered Device Repair Assistant",
+      subtitle: "Full-Stack Device Repair Management & Booking Platform ",
       handle: "repairmate",
       borderColor: "#4F46E5",
       gradient: "linear-gradient(145deg,#4F46E5,#000)",
       url: "https://repair-mate-jsws.vercel.app/",
     },
     {
-      image: "project2.png",
+      image: "Project2.png",
       title: "Portfolio Website",
       subtitle: "A Modern Frontend Developer Portfolio",
       handle: "portfolio",

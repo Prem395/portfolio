@@ -54,7 +54,7 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <CiLinkedin className="social-icon size-5 cursor-pointer sm:size-6 md:size-7" />
+          <CiLinkedin className="social-icon size-5 cursor-pointer sm:size-6 md:size-7 hover:text-gray-300" />
         </a>
 
         <a
@@ -62,7 +62,7 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub className="social-icon size-5 cursor-pointer sm:size-6 md:size-7" />
+          <FaGithub className="social-icon size-5 cursor-pointer sm:size-6 md:size-7 hover:text-gray-300" />
         </a>
       </div>
     </nav>

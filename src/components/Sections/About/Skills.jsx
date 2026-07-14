@@ -39,7 +39,6 @@ const Skills = () => {
         },
       });
 
-      // Hover scaling (best handled via GSAP context)
       container.querySelectorAll(".icon-item").forEach((item) => {
         item.addEventListener("mouseenter", () =>
           gsap.to(item, { scale: 1.1, duration: 0.2 }),
@@ -49,7 +48,7 @@ const Skills = () => {
         );
       });
     },
-    { scope: containerRef }, // ✅ CORRECT way to define scope
+    { scope: containerRef },
   );
 
   const vsCodePlaceholder =
