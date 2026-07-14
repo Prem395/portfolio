@@ -1,10 +1,11 @@
 import ScrollFloat from "../components/Animations/ScrollFloat";
 import MyProjects from "../components/Sections/MyProjects/MyProjects";
-
+import project1 from "../../public/Project1.png";
+import project2 from "../../public/Project2.png";
 const Projects = () => {
   const Projects = [
     {
-      image: "Project1.png",
+      image: project1,
       title: "RepairMate",
       subtitle: "Full-Stack Device Repair Management & Booking Platform ",
       handle: "repairmate",
@@ -13,13 +14,13 @@ const Projects = () => {
       url: "https://repair-mate-jsws.vercel.app/",
     },
     {
-      image: "Project2.png",
+      image: project2,
       title: "Portfolio Website",
       subtitle: "A Modern Frontend Developer Portfolio",
       handle: "portfolio",
       borderColor: "#C75038",
       gradient: "linear-gradient(145deg,#E3391B,#C75038)",
-      url: "",
+      url: "https://www.premrathod.me/",
     },
   ];
 
