@@ -1,5 +1,5 @@
 import ScrollFloat from "../components/Animations/ScrollFloat";
-import MyProjects from "../components/Sections/MyProjects/MyProejcts";
+import MyProjects from "../components/Sections/MyProjects/MyProjects";
 
 const Projects = () => {
   const Projects = [
